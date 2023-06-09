@@ -1,10 +1,10 @@
-import { userRoutes } from './Users/index.mjs';
+import userRoutes from './Users/index.mjs';
 import { Router } from "express";
 const router = Router();
 
 router.use('/api/v1/',
     [
-        userRoutes
+        ...userRoutes
     ]
 );
 

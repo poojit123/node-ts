@@ -3,8 +3,10 @@ import { authController } from "../../controllers/index.mjs";
 const router = Router();
 
 router.get(
-    '/login',
-    authController.login
+    '/post',
+    (req,res)=>{
+        res.send('post controller changes.');
+    }
 );
 
-export const authRoute = router;
+export const post = router;
